@@ -32,15 +32,4 @@
 
 	/*line_ah*/
 	.line_ah:after{content: ''; width: 150px; height: 1px; background-color: #000; margin: 15px auto; display: block; }
-
 	.bgc_gray{background-color: #ccc;}
-
-
-
-	/*hankug*/
-	.p_hk01{padding: 80px 90px !important;}
-	.p_hk02{padding: 80px 40px !important;}
-	.p_hk03{padding: 25px 20px 20px 20px !important;}
-	
-	.bgc_hkblue01{background-color: #0044af;}
-	.bgc_hkblue02{background-color: #00163b;}
