@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider01").bxSlider({controls:false, pagerCustom:".slider01tab", mode:"vertical", auto:true, touchEnabled:false});
+			var mct02sl = $(".slider02").bxSlider({pager:false, controls:false, auto:true});
+			$(".prvbtn").click(function(){mct02sl.goToPrevSlide()});
+			$(".nxtbtn").click(function(){mct02sl.goToNextSlide()});
+			var mct03sl = $(".slider03").bxSlider({pager:false, controls:false, auto:true});
+			$(".prvbtn2").click(function(){mct03sl.goToPrevSlide()});
+			$(".nxtbtn2").click(function(){mct03sl.goToNextSlide()});
+		});
+			new WOW().init();
+	</script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+		@keyframes ani_bu01 {from{margin-top: 25px;}to{margin-top: 50px;}}
+		@keyframes airpl2 {0%{margin-right: 10px;}25%{margin-right: 8px;}50%{margin-right: 9px;}75%{margin-right: 6px;}100%{margin-right: 10px;}}
+		@keyframes airpl {from{left: -1100px;}to{left: 1500px;}}
+		@keyframes airpl2 {from{top: 440px;}to{top: 430px;}}				
+		@keyframes ani_bu03{from{transform: rotate(0deg);}to{transform: rotate(30deg);}};
+		body{font-family: 'Noto Sans KR', sans-serif;}				
+	</style>
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="headertop container clearfix">
+			<h1><a href="index.html#header" class="blind">travel 하이미디어</a></h1>
+			<fieldset>
+				<legend class="blind">검색창</legend>
+				<div class="field hds">
+					<label for="search">SEARCH</label>
+					<input type="text" id="search" name="search" placeholder="검색어를 입력하세요." required class="">
+					<button type="button" class="blind">검색</button>
+				</div>
+			</fieldset>
+			<ul class="header_right">
+				<li><strong>+82</strong> 02 1234 5678</li>
+				<li class="snswrap"><a href="javascript-void(0)" class="sns fa"></a></li>
+				<li class="snswrap"><a href="javascript-void(0)" class="sns tw"></a></li>
+				<li class="snswrap"><a href="javascript-void(0)" class="sns bl"></a></li>
+				<li class="snswrap"><a href="javascript-void(0)" class="sns in"></a></li>
+			</ul>
+		</div>
+		<div class="headerbottomWrap">
+			<ul class="headerbottom container clearfix tac">
+				<li><a href="#">여행도시</a></li>
+				<li><a href="#">호텔예약</a></li>
+				<li><a href="#">렌트카</a></li>
+				<li class="new_btn"><a href="#">여행TIP</a></li>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">커뮤니티</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="containerWrap">
+		<div class="aniWrap">
+			<img src="images/content5.png" alt="" class="airpl2">
+			<img src="images/airpl.png" alt="" class="airpl">
+		</div>
+		<div class="content container pt55">
+			<div class="mct01 clearfix wow fadeInDown">
+				<div class="slider01wraper tr_mr16 tr_mb16 clearfix">
+					<div class="slider01wrap">
+						<div class="slider01">
+							<div class="sl01">
+								<fieldset>
+									<legend>airport</legend>
+									<label for="country">가고싶은 나라를 선택하세요.</label>
+									<select name="country" id="country" class="country">
+										<option value="미국">미국</option>
+										<option value="영국">영국</option>
+										<option value="프랑스">프랑스</option>
+										<option value="중국">중국</option>
+										<option value="일본">일본</option>
+									</select>
+									<label for="start" class="date start">출발일</label>
+									<label for="arrival" class="date arrival">도착일</label>
+									<input type="date" id="start" name="start" class="date start">
+									<input type="date" id="arrival" name="arrival" class="date">
+									<label for="class" class="class">좌석등급</label>
+									<label for="adult" class="peo adult">성인</label>
+									<label for="child" class="peo child">아이</label>
+									<select name="class" id="class" class="class">
+										<option value="nomal">이코노미 클래스</option>
+										<option value="business">비즈니스 클래스</option>
+										<option value="first">퍼스트 클래스</option>
+									</select>
+									<select name="poe" id="adult" class="peo adult">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+									<select name="poe" id="child" class="peo child">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</fieldset>
+								<div class="submit_area">
+									<input type="submit" value="검색하기" class="submit_btn">
+								</div>
+							</div>
+							<div class="sl01">
+								<fieldset>
+									<legend>airport</legend>
+									<label for="country">가고싶은 나라를 선택하세요.</label>
+									<select name="country" id="country" class="country">
+										<option value="미국">미국</option>
+										<option value="영국">영국</option>
+										<option value="프랑스">프랑스</option>
+										<option value="중국">중국</option>
+										<option value="일본">일본</option>
+									</select>
+									<label for="start" class="date start">출발일</label>
+									<label for="arrival" class="date arrival">도착일</label>
+									<input type="date" id="start" name="start" class="date start">
+									<input type="date" id="arrival" name="arrival" class="date">
+									<label for="class" class="class">좌석등급</label>
+									<label for="adult" class="peo adult">성인</label>
+									<label for="child" class="peo child">아이</label>
+									<select name="class" id="class" class="class">
+										<option value="nomal">이코노미 클래스</option>
+										<option value="business">비즈니스 클래스</option>
+										<option value="first">퍼스트 클래스</option>
+									</select>
+									<select name="poe" id="adult" class="peo adult">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+									<select name="poe" id="child" class="peo child">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</fieldset>
+								<div class="submit_area">
+									<input type="submit" value="검색하기" class="submit_btn">
+								</div>
+							</div>
+							<div class="sl01">
+								<fieldset>
+									<legend>airport</legend>
+									<label for="country">가고싶은 나라를 선택하세요.</label>
+									<select name="country" id="country" class="country">
+										<option value="미국">미국</option>
+										<option value="영국">영국</option>
+										<option value="프랑스">프랑스</option>
+										<option value="중국">중국</option>
+										<option value="일본">일본</option>
+									</select>
+									<label for="start" class="date start">출발일</label>
+									<label for="arrival" class="date arrival">도착일</label>
+									<input type="date" id="start" name="start" class="date start">
+									<input type="date" id="arrival" name="arrival" class="date">
+									<label for="class" class="class">좌석등급</label>
+									<label for="adult" class="peo adult">성인</label>
+									<label for="child" class="peo child">아이</label>
+									<select name="class" id="class" class="class">
+										<option value="nomal">이코노미 클래스</option>
+										<option value="business">비즈니스 클래스</option>
+										<option value="first">퍼스트 클래스</option>
+									</select>
+									<select name="poe" id="adult" class="peo adult">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+									<select name="poe" id="child" class="peo child">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</fieldset>
+								<div class="submit_area">
+									<input type="submit" value="검색하기" class="submit_btn">
+								</div>
+							</div>
+							<div class="sl01">
+								<fieldset>
+									<legend>airport</legend>
+									<label for="country">가고싶은 나라를 선택하세요.</label>
+									<select name="country" id="country" class="country">
+										<option value="미국">미국</option>
+										<option value="영국">영국</option>
+										<option value="프랑스">프랑스</option>
+										<option value="중국">중국</option>
+										<option value="일본">일본</option>
+									</select>
+									<label for="start" class="date start">출발일</label>
+									<label for="arrival" class="date arrival">도착일</label>
+									<input type="date" id="start" name="start" class="date start">
+									<input type="date" id="arrival" name="arrival" class="date">
+									<label for="class" class="class">좌석등급</label>
+									<label for="adult" class="peo adult">성인</label>
+									<label for="child" class="peo child">아이</label>
+									<select name="class" id="class" class="class">
+										<option value="nomal">이코노미 클래스</option>
+										<option value="business">비즈니스 클래스</option>
+										<option value="first">퍼스트 클래스</option>
+									</select>
+									<select name="poe" id="adult" class="peo adult">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+									<select name="poe" id="child" class="peo child">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</fieldset>
+								<div class="submit_area">
+									<input type="submit" value="검색하기" class="submit_btn">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider01tab clearfix">
+						<a href="" class="tab01 blind" data-slide-index="0">공항예약</a>
+						<a href="" class="tab02 blind" data-slide-index="1">호텔예약</a>
+						<a href="" class="tab03 blind" data-slide-index="2">렌트카</a>
+						<a href="" class="tab04 blind" data-slide-index="3">휴양지</a>
+					</div>
+				</div>
+				<div class="mct01title ptb10">
+					<h2>TRAVEL <span>GO</span></h2>
+					<p>지금,여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</p>
+					<img src="images/balloon02.png" alt="" class="ani_bu01 balloon02">
+					<img src="images/balloon01.png" alt="" class="ani_bu01 balloon01">
+				</div>
+				<div class="mct01ct03 tr_boxset hv_sc hv_ul"><a href="">
+					<img src="images/mct01_03.jpg" alt="">
+					<div class="mct01ct03txt clearfix tr_p02">
+						<p class="left tul">프랑스</p>
+						<p class="right">₩1,900,000~</p>
+					</div>
+				</a></div>
+				<div class="mct01ct03 tr_boxset hv_sc hv_ul"><a href="">
+					<img src="images/mct01_04.jpg" alt="">
+					<div class="mct01ct03txt clearfix tr_p02">
+						<p class="left tul">일본</p>
+						<p class="right">₩890,000~</p>
+					</div>
+				</a></div>
+			</div>
+			<div class="mct02 clearfix wow fadeInLeft" data-wow-delay="">
+				<div class="tr_boxset">
+					<ul class="slider02 hv_sc hv_ul">
+						<li>
+							<img src="images/mct02_01.jpg" alt="">
+							<div class="slider02txt tr_p01"><a href="">
+								<p class="fwb tul">HILLTON HOTEL1 (PARIS)</p>
+								<p><span class="star">★★★</span>★★</p>
+							</a></div>
+						</li>
+						<li>
+							<img src="images/mct02_01.jpg" alt="">
+							<div class="slider02txt tr_p01"><a href="">
+								<p class="fwb tul">HILLTON HOTEL2 (PARIS)</p>
+								<p><span class="star">★★★</span>★★</p>
+							</a></div>
+						</li>
+						<li>
+							<img src="images/mct02_01.jpg" alt="">
+							<div class="slider02txt tr_p01"><a href="">
+								<p class="fwb tul">HILLTON HOTEL3 (PARIS)</p>
+								<p><span class="star">★★★</span>★★</p>
+							</a></div>
+						</li>
+					</ul>
+					<div class="nxtbtn"><img src="images/control_next.png" alt=""></div>
+					<div class="prvbtn"><img src="images/control_prev.png" alt=""></div>
+				</div>
+				<div class="tr_boxset">
+					<ul class="slider03 hv_sc hv_ul">
+						<li>
+							<img src="images/mct02_02.jpg" alt="">
+							<div class="slider02txt tr_p01"><a href="">
+								<p class="fwb tul">관광명소1(디즈니랜드)</p>
+								<p><span class="star">★★★</span>★★</p>
+							</a></div>
+						</li>
+						<li>
+							<img src="images/mct02_02.jpg" alt="">
+							<div class="slider02txt tr_p01"><a href="">
+								<p class="fwb tul">관광명소2(디즈니랜드)</p>
+								<p><span class="star">★★★</span>★★</p>
+							</a></div>
+						</li>
+						<li>
+							<img src="images/mct02_02.jpg" alt="">
+							<div class="slider02txt tr_p01"><a href="">
+								<p class="fwb tul">관광명소3(디즈니랜드)</p>
+								<p><span class="star">★★★</span>★★</p>
+							</a></div>
+						</li>
+					</ul>
+					<div class="nxtbtn2"><img src="images/control_next.png" alt=""></div>
+					<div class="prvbtn2"><img src="images/control_prev.png" alt=""></div>
+				</div>
+				<div class="mct02ct03 tr_boxset hv_sc hv_ul">
+					<img src="images/mct02_03.jpg" alt="">
+					<h2 class="pt10">TOKYO</h2>
+					<div class="mct02ct03txt tr_p01 ts03"><a href="">
+						<p class="fwb tul">20℃ <span>구름조금</span></p>
+						<p class="tokyowst">습도 60% 바람 남남동 2m/s</p>
+					</a></div>
+				</div>
+				<div class="mct02ct04 tr_boxset mr0 hv_sc hv_ul">
+					<img src="images/mct02_04.jpg" alt="">
+					<div class="mct02ct04mtxt">
+						<p class="ct04mtxt">"해외여행은 처음이었는데,<br>하이미디어여행 덕분에 무사히<br>다녀올 수 있었어요."</p>
+						<p class="ct04stxt">프랑스 파리 자유여행</p>
+						<p class="star">★★★<span class="star2">★★</span></p>
+					</div>
+					<div class="mct02ct04stxt tr_p01"><a href="">
+						<p class="fwb tul">facebook 여행후기</p>
+						<p class="fbn">(임정희님)</p>
+					</a></div>
+				</div>
+			</div>
+			<div class="mct03 clearfix wow fadeInRight">
+				<div class="tr_boxset mct03wrap hv_sc2 hv_ul">
+					<img src="images/mct03_01.jpg" alt="" class="pr0">
+					<div class="mct03ct01 clearfix tr_p04">
+						<h2 class="clearfix"><img src="images/box07_icon.png" alt="">여행정보</h2>
+						<p class="tul">다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+						<div class="plusbtn">
+							<img src="images/plus_btn.png" alt="" class="plusbtn1 pr0">
+							<img src="images/plus2_btn.png" alt="" class="plusbtn2 pr0">
+						</div>
+					</div>
+				</div>
+				<div class="tr_boxset mct03wrap hv_sc2 hv_ul">
+					<img src="images/mct03_02.jpg" alt="" class="pr0">
+					<div class="mct03ct02 clearfix tr_p04">
+						<div class="plus2btn">
+							<img src="images/plus_btn.png" alt="" class="plusbtn1 pr0">
+							<img src="images/plus2_btn.png" alt="" class="plusbtn2 pr0">
+						</div>
+						<h2 class="clearfix"><img src="images/box08_icon.png" alt="">맛집정보</h2>
+						<p class="tul">다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+					</div>
+				</div>
+				<div class="tr_boxset mct03wrap mr0 hv_sc2 hv_ul">
+					<img src="images/mct03_03.jpg" alt="" class="pr0">
+					<div class="mct03ct03 clearfix tr_p04">
+						<div class="plus2btn">
+							<img src="images/plus_btn.png" alt=""  class="plusbtn1 pr0">
+							<img src="images/plus2_btn.png" alt=""  class="plusbtn2 pr0">
+						</div>
+						<h2 class="clearfix"><img src="images/box09_icon.png" alt="">숙박정보</h2>
+						<p class="tul">다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+					</div>
+				</div>
+				<div class="tr_boxset mct03wrap hv_sc2 hv_ul">
+					<img src="images/mct03_04.jpg" alt="" class="pr0">
+					<div class="mct03ct04 clearfix tr_p04">
+						<h2 class="clearfix"><img src="images/box10_icon.png" alt="">여행자후기</h2>
+						<p class="tul">다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+						<div class="plusbtn">
+							<img src="images/plus_btn.png" alt="" class="plusbtn1 pr0">
+							<img src="images/plus2_btn.png" alt="" class="plusbtn2 pr0">
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer container pt10">
+				<ul class="footerutil clearfix">
+					<li class="pl0"><a href="">이용약관</a></li>
+					<li><a href="" class="fwb">개인정보취급방침</a></li>
+					<li><a href="">사이트맵</a></li>
+					<li><a href="">고객센터</a></li>
+					<li><a href="">광고 및 제휴문의</a></li>
+				</ul>
+				<p>서울시 영등포구 여의도동 1234567 &nbsp; (주)하이미디어 &nbsp; 사업자등록번호: 000-00-00000 &nbsp; 대표: 홍길동 &nbsp; TEL : 02-0000-0000<br>COPYRIGHT(C)2020 HIMEDIA TOUR. ALL RIGHTS RESERVED.</p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
